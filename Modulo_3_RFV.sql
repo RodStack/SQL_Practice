@@ -3,13 +3,13 @@ CREATE DATABASE Alke_Wallet
 USE Alke_Wallet;
 
 CREATE TABLE Moneda(
-	currency_id INT PRIMARY KEY,
+    currency_id INT PRIMARY KEY,
     currency_name VARCHAR(30),
     currency_symbol VARCHAR(10)
 );
 
 CREATE TABLE Usuario(
-	user_id INT PRIMARY KEY,
+    user_id INT PRIMARY KEY,
     nombre VARCHAR(50),
     correo_electronico VARCHAR(50),
     contraseña VARCHAR(20),
@@ -17,7 +17,7 @@ CREATE TABLE Usuario(
 );
 
 CREATE TABLE Transaccion (
-	transaction_id INT PRIMARY KEY,
+    transaction_id INT PRIMARY KEY,
     importe FLOAT,
     transaction_date DATE,
     sender_user_id INT,
